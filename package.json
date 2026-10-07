@@ -1,19 +1,43 @@
 {
   "name": "dsh-locale-fr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "French locale pack for the DeepSeek Harness interface — 58 namespaces, 2614 translated keys, English fallback.",
   "type": "module",
-  "exports": { ".": "./index.js", "./client": "./client.js" },
-  "files": ["index.js", "client.js", "cordis.patch.yml", "README.md", "LICENSE"],
-  "keywords": ["dsh", "deepseek-harness", "locale", "i18n", "french", "français", "plugin"],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "locale",
+    "i18n",
+    "french",
+    "français",
+    "plugin"
+  ],
   "license": "MIT",
-  "repository": { "type": "git", "url": "git+https://github.com/BlackAngel242/dsh-locale-fr.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackAngel242/dsh-locale-fr.git"
+  },
   "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
       "immediately": true,
-      "inject": ["@deepseek-ai/dsh-client-locale"]
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ]
     }
   }
 }
